@@ -6,4 +6,5 @@ module.exports = function () {
     obj.sayName = function () {
         console.log(this.name)
     }
+    return 'Are you OK?'
 }
