@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            height: 200px;
+            margin-bottom: 100px;
+        }
+        /* 1 */
+        .outer1{
+            display: flex;
+        }
+        .inner11{
+            width: 200px;
+            background-color: lightpink;
+        }
+        .inner12{
+            flex: 1;
+            background-color: lightblue;
+        }
+        .inner13{
+            width: 150px;
+            background-color: lightsalmon;
+        }
+
+        /* 2 */
+        .outer2{
+            padding-left: 200px;
+            padding-right: 150px;
+        }
+        .inner21 {
+            width: 200px;
+            float: left;
+            background-color: lightpink;
+            margin-left: -100%;
+            left: -200px;
+            position: relative;
+        }
+        .inner22{
+            width: 100%;
+            float: left;
+            background-color: lightblue;
+        }
+        .inner23{
+            width: 150px;
+            float: left;
+            margin-left: -150px;
+            position: relative;
+            right: -150px;
+            background-color: lightsalmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer1">
+        <div class="inner11"></div>
+        <div class="inner12"></div>
+        <div class="inner13"></div>
+    </div>
+    <div class="outer2">
+       
+        <div class="inner22"></div>
+        <div class="inner21"></div>
+        <div class="inner23"></div>
+    </div>
+</body>
+</html>

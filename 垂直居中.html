@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fa{
+            /* border-top: 150px solid red;
+            border-right: 150px solid transparent;
+            border-bottom: 150px solid transparent;
+            border-left: 150px solid transparent; */
+            width: 300px;
+            height: 300px;
+            margin-bottom: 80px;
+            background-color: lightsteelblue;
+            float: left;
+            margin-right: 10px;
+            position: relative;
+        }
+        /* 1 */
+        .ch{
+            width: 120px;
+            height: 120px;
+            background-color: maroon;
+        }
+        .outer1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 2 */
+        .outer2{
+            position: relative;
+        }
+        .inner2{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -60px;
+            margin-left: -60px;
+        }
+
+        /* 3 */
+        .inner3{
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+    </style>
+</head>
+<body>
+    <div class="fa outer1">
+        <div class="ch inner1"></div>
+    </div>
+    <div class="fa outer2">
+        <div class="ch inner2"></div>
+    </div>
+    <div class="fa outer3">
+        <div class="ch inner3"></div>
+    </div>
+</body>
+</html>
