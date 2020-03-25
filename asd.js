@@ -3,4 +3,7 @@ module.exports = function () {
         name: 'gxx',
         age: 24
     }
+    obj.sayName = function () {
+        console.log(this.name)
+    }
 }
